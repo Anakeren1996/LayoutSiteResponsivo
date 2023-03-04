@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&family=PT+Serif:wght@400;700&family=Yeseva+One&display=swap");
-
 body,
 ul {
   margin: 0px;
@@ -11,6 +10,7 @@ a {
   text-decoration: none;
   font-family: "PT Serif", serif;
 }
+
 a:hover {
   background: rgba(0, 0, 0, 0.08);
 }
@@ -57,17 +57,20 @@ a:hover {
     visibility: hidden;
     overflow-y: hidden;
   }
+
   #nav.active #menu {
     background: #b13941;
     height: calc(100vh - 70px);
     visibility: visible;
     overflow-y: auto;
   }
+
   #menu a {
     padding: 1rem 0;
     margin: 0 1rem;
     text-align: center;
   }
+
   #btn-mobile {
     display: flex;
     padding: 0.5rem 1rem;
@@ -78,34 +81,40 @@ a:hover {
     gap: 0.5rem;
     color: #ffffff;
   }
+
   #hamburger {
     border-top: 2px solid;
     width: 20px;
   }
+
   #hamburger::after,
-  #hamburger::before {
+#hamburger::before {
     content: "";
     display: block;
     width: 20px;
     height: 2px;
-    // current-color -> COPIA A PROPRIEDADE COLOR DO (#hamburger)
     background: currentColor;
     margin-top: 5px;
     transition: 0.3s;
     position: relative;
   }
+
   #nav.active #hamburger {
-    // TIRA A COR DO border-top DO #hamburguer -> JÁ QUE PRA FAZER O X PRECISAREMOS SOMENTE DE DOIS TRAÇOS
     border-top-color: transparent;
   }
+
   #nav.active #hamburger::before {
     transform: rotate(135deg);
   }
+
   #nav.active #hamburger::after {
     transform: rotate(-135deg);
     top: -7px;
   }
+
   #img-link-menu {
     width: 10%;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
